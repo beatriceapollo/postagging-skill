@@ -20,7 +20,8 @@ class Postagging(MycroftSkill):
             return True
         else:
             return False 
-
+def stop(self):
+        pass
 
 def create_skill():
     return Postagging()
