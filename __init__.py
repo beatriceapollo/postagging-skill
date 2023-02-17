@@ -14,7 +14,7 @@ class Postagging(MycroftSkill):
     def converse(self, utterances, lang):
         if utterances:
             for i in utterances:
-                text = utterances[i]
+                text = i
                 tokenized_text = word_tokenize(text)
                 tagged_text = nltk.pos_tag(tokenized_text)
                 self.speak(print(tagged_text))
