@@ -16,7 +16,7 @@ class Postagging(MycroftSkill):
             text = utterances[0]
             tokenized_text = word_tokenize(text)
             tagged_text = nltk.pos_tag(tokenized_text)
-            self.speak(tagged_text)
+            self.speak(print(tagged_text))
             return True
         else:
             return False 
