@@ -12,6 +12,7 @@ class Postagging(MycroftSkill):
     def handle_postagging(self, message):
         self.speak_dialog('postagging')
     def converse(self, utterances, lang):
+        if utterances:
             for i in utterances:
                 text = i
                 tokenized_text = word_tokenize(text)
@@ -19,6 +20,9 @@ class Postagging(MycroftSkill):
                 self.speak(print(tagged_text))
                 if self.voc_match(i, 'stop'):
                     pass
+            return True
+        else:
+            return False 
 
 
 def create_skill():
