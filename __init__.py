@@ -1,4 +1,5 @@
-from mycroft import MycroftSkill, intent_file_handler
+from mycroft import MycroftSkill, intent_handler
+from adapt.intent import IntentBuilder
 from nltk.tokenize import word_tokenize
 import nltk
 
@@ -8,22 +9,15 @@ class Postagging(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
 
-    @intent_file_handler('postagging.intent')
+    @intent_handler('postagging.intent')
     def handle_postagging(self, message):
         self.speak_dialog('postagging')
-    def converse(self, utterances, lang):
-        if utterances:
-            for i in utterances:
-                if self.voc_match(i, 'stop'):
-                    pass
-                else:
-                    text = i
-                    tokenized_text = word_tokenize(text)
-                    tagged_text = nltk.pos_tag(tokenized_text)
-                    self.speak(print(tagged_text))
-            return True
-        else:
-            return False 
+    @intent_handler(IntentBuilder('UniversityIntent').require('university'))
+    def handle_university_intent(self, message):
+        text = message.data.get('utterance')
+        tokenized_text = word_tokenize(text)
+        tagged_text = nltk.pos_tag(tokenized_text)
+        self.speak(print(tagged_text))
 
 
 def create_skill():
