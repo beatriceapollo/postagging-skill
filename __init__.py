@@ -14,12 +14,12 @@ class Postagging(MycroftSkill):
     def converse(self, utterances, lang):
         if utterances:
             for i in utterances:
+                if self.voc_match(i, 'stop'):
+                    pass
                 text = i
                 tokenized_text = word_tokenize(text)
                 tagged_text = nltk.pos_tag(tokenized_text)
                 self.speak(print(tagged_text))
-                if self.voc_match(i, 'stop'):
-                    pass
             return True
         else:
             return False 
