@@ -19,6 +19,9 @@ class Postagging(MycroftSkill):
             tagged_text = nltk.pos_tag(tokenized_text)
             self.speak(print(tagged_text))
 
+    def stop(self):
+         self.process.terminate()
+         
 
 def create_skill():
     return Postagging()
