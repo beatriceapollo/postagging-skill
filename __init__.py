@@ -12,11 +12,8 @@ class Postagging(MycroftSkill):
     @intent_handler('postagging.intent')
     def handle_postagging(self, message):
         self.speak_dialog('postagging')
-    @intent_handler(IntentBuilder('UniversityIntent').require('university').require('stop'))
+    @intent_handler(IntentBuilder('UniversityIntent').require('university'))
     def handle_university_intent(self, message):
-        if self.voc_match(message.data['utterances'], 'stop'):
-            pass
-        else:
             text = message.data.get('utterance')
             tokenized_text = word_tokenize(text)
             tagged_text = nltk.pos_tag(tokenized_text)
