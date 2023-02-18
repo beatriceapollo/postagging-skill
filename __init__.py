@@ -16,10 +16,11 @@ class Postagging(MycroftSkill):
             for i in utterances:
                 if self.voc_match(i, 'stop'):
                     pass
-                text = i
-                tokenized_text = word_tokenize(text)
-                tagged_text = nltk.pos_tag(tokenized_text)
-                self.speak(print(tagged_text))
+                else:
+                    text = i
+                    tokenized_text = word_tokenize(text)
+                    tagged_text = nltk.pos_tag(tokenized_text)
+                    self.speak(print(tagged_text))
             return True
         else:
             return False 
