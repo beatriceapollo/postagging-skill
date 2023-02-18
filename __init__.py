@@ -20,7 +20,9 @@ class Postagging(MycroftSkill):
             self.speak(print(tagged_text))
 
     def stop(self):
-         self.process.terminate()
+        if self.process and self.process.poll() is None:
+            self.process.terminate()
+            self.process.wait()
          
 
 def create_skill():
