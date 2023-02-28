@@ -13,7 +13,7 @@ class Postagging(MycroftSkill):
     def handle_postagging(self, message):
         self.speak_dialog('postagging')
 
-    @intent_handler(IntentBuilder('UniversityIntent').require('university'))
+    @intent_handler(IntentBuilder('IdentityIntent').require('identity'))
     def handle_university_intent(self, message):
             text = message.data.get('utterance')
             tokenized_text = word_tokenize(text)
