@@ -14,7 +14,7 @@ class Postagging(MycroftSkill):
         self.speak_dialog('postagging')
 
     @intent_handler(IntentBuilder('IdentityIntent').require('identity'))
-    def handle_university_intent(self, message):
+    def handle_identity_intent(self, message):
             text = message.data.get('utterance')
             tokenized_text = word_tokenize(text)
             tagged_text = nltk.pos_tag(tokenized_text)
