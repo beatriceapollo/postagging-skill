@@ -9,8 +9,6 @@
    python:
      - nltk
      - owlready2
-     - adapt.intent
-     - nltk.chunk
 #     - gensim
 #
 #   # Install packages with the system package manager
