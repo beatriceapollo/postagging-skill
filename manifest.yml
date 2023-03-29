@@ -8,6 +8,10 @@
 #   # Pip dependencies on PyPI
    python:
      - nltk
+     - owlready2
+     - mycroft
+     - adapt.intent
+     - nltk.chunk
 #     - gensim
 #
 #   # Install packages with the system package manager
