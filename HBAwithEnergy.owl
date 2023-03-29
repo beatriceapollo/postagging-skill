@@ -1,0 +1,3719 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://sisinflab.poliba.it/unnamed.owl#"
+     xml:base="http://sisinflab.poliba.it/unnamed.owl"
+     xmlns:hba="http://swot.sisinflab.poliba.it/onto/hba#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://swot.sisinflab.poliba.it/onto/hba"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#synset -->
+
+    <owl:AnnotationProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#synset"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Watt -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Watt"/>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#avgwattcons -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#avgwattcons"/>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#cents -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#cents"/>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#hasAnnualConsumption -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#hasAnnualConsumption">
+        <rdfs:subPropertyOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasConsumptionValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#hasAvgConsumption -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#hasAvgConsumption">
+        <rdfs:subPropertyOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasConsumptionValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#hasCO2Savings -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#hasCO2Savings">
+        <rdfs:domain rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#EnergySources"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#hasConsumptionValue -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#hasConsumptionValue"/>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#hasCostPerkWh -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#hasCostPerkWh"/>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#hasDuration -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#hasDuration"/>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#hasEnergyLabel -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#hasEnergyLabel">
+        <rdfs:domain rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Device"/>
+        <rdfs:range rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#DeviceInfo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#hasFunctionality -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#hasFunctionality">
+        <rdfs:domain rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Device"/>
+        <rdfs:domain rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#EnergySources"/>
+        <rdfs:range rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Functionality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#hasLoadProfile -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#hasLoadProfile">
+        <rdfs:domain rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Device"/>
+        <rdfs:domain rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#EnergySources"/>
+        <rdfs:range rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#LoadProfile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#hasMaxConsumption -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#hasMaxConsumption">
+        <rdfs:subPropertyOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasConsumptionValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#hasMinConsumption -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#hasMinConsumption">
+        <rdfs:subPropertyOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasConsumptionValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#hasProgram -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#hasProgram"/>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#hasSize -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#hasSize">
+        <rdfs:domain rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Oven"/>
+        <rdfs:range rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Oven_Size"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#hasTypeProfile -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#hasTypeProfile">
+        <rdfs:domain rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Device"/>
+        <rdfs:domain rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#EnergySources"/>
+        <rdfs:range rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#TypeProfile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#hasTypicalConsumption -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#hasTypicalConsumption">
+        <rdfs:subPropertyOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasConsumptionValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#isIn -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#isIn">
+        <rdfs:domain rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Device"/>
+        <rdfs:range rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BuildingEnvironment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#isOfferedBy -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#isOfferedBy"/>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#isOld -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#isOld">
+        <rdfs:domain rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#AgeRange"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#isSuggestedFor -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#isSuggestedFor"/>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForAge -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForAge">
+        <rdfs:range rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#AgeRange"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForDisease -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForDisease">
+        <rdfs:range rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForGender -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForGender">
+        <rdfs:range rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Gender"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForHandicap -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForHandicap">
+        <rdfs:range rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Handicap"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForMood -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForMood">
+        <rdfs:range rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Mood"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForMusicalGenre -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForMusicalGenre">
+        <rdfs:range rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MusicalGenre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForOutdoorLuminosity -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForOutdoorLuminosity">
+        <rdfs:range rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#OutdoorLuminosity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForStamina -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForStamina">
+        <rdfs:range rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Stamina"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForTemperature -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForTemperature">
+        <rdfs:range rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Temperature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForVideoPreferences -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForVideoPreferences">
+        <rdfs:range rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#VideoPreferences"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForWeatherCondition -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForWeatherCondition">
+        <rdfs:range rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WeatherCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForWindSpeed -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForWindSpeed">
+        <rdfs:range rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WindSpeed"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#kWh -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#kWh"/>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#kg -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#kg"/>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#min -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#min"/>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#suitableForProcess -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#suitableForProcess">
+        <rdfs:domain rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Device"/>
+        <rdfs:range rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#suitableForUserPosition -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#suitableForUserPosition">
+        <rdfs:domain rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Functionality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#years -->
+
+    <owl:ObjectProperty rdf:about="http://swot.sisinflab.poliba.it/onto/hba#years"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#A -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#A">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Light_EnergyLabel"/>
+        <rdfs:comment>Fluorescent</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#A_Aircondition -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#A_Aircondition">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Aircondition_EnergyLabel"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasAnnualConsumption"/>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#kWh"/>
+                                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">890</owl:maxCardinality>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#A_BigOven -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#A_BigOven">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Big"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasAnnualConsumption"/>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#kWh"/>
+                                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">99</owl:maxCardinality>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#A_Dishwasher -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#A_Dishwasher">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Dishwasher_EnergyLabel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasAnnualConsumption"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#kWh"/>
+                        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">231</owl:maxCardinality>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#A_MediumOven -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#A_MediumOven">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Medium"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasAnnualConsumption"/>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#kWh"/>
+                                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">79</owl:maxCardinality>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#A_SmallOven -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#A_SmallOven">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Small"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasAnnualConsumption"/>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#kWh"/>
+                                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">59</owl:maxCardinality>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#A_WashingMachine -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#A_WashingMachine">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#WashingMachine_EnergyLabel"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasAnnualConsumption"/>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#kWh"/>
+                                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">246</owl:maxCardinality>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Actuators -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Actuators">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Adult -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Adult">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#isOld"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#years"/>
+                                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">30</owl:minCardinality>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#years"/>
+                                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">65</owl:maxCardinality>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Baby"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Boy"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Child"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#OldPerson"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Adventure -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Adventure">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#VideoPreferences"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Amorous"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Cartoon"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Comedy"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Historical"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Horror"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#ScienceFiction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#AgeRange -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#AgeRange">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#GeneralStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#AirConditioning -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#AirConditioning">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#HVAC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#AirconditionInfo -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#AirconditionInfo">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#DeviceInfo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Aircondition_EnergyLabel -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Aircondition_EnergyLabel">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#AirconditionInfo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Alarm -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Alarm">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#HighSecurityLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Signal"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Signal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Amorous -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Amorous">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#VideoPreferences"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Cartoon"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Comedy"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Historical"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Horror"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#ScienceFiction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Anxious -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Anxious">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Mood"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Calm"/>
+        <hba:synset>anxious.a.02</hba:synset>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Aplus_Freezer -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Aplus_Freezer">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Freezer_EnergyLabel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasAnnualConsumption"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#kWh"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">188</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Aplus_Refrigerator -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Aplus_Refrigerator">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Refrigerator_EnergyLabel"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasAnnualConsumption"/>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#kWh"/>
+                                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">188</owl:minCardinality>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Aplusplus_Freezer -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Aplusplus_Freezer">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Freezer_EnergyLabel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasAnnualConsumption"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#kWh"/>
+                        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">187</owl:maxCardinality>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Aplusplus_Refrigerator -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Aplusplus_Refrigerator">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Refrigerator_EnergyLabel"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasAnnualConsumption"/>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#kWh"/>
+                                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">187</owl:maxCardinality>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Appliance -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Appliance">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Device"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#HVAC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Away -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Away">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#FullDownblind"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#HighSecurityLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Microwave_OFF"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NoLight"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NoPlayDVD"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NoPlayMusic"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NoPlayRadio"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NoPlayTV"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PC_OFF"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#TurnOffKitchenDevices"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BodyProcess"/>
+        <rdfs:comment>--Away From Home--</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#B -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#B">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Light_EnergyLabel"/>
+        <rdfs:comment>Fluorescent
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#B_Aircondition -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#B_Aircondition">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Aircondition_EnergyLabel"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasAnnualConsumption"/>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#kWh"/>
+                                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">891</owl:minCardinality>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#B_BigOven -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#B_BigOven">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Big"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasAnnualConsumption"/>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#kWh"/>
+                                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">100</owl:minCardinality>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#B_Dishwasher -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#B_Dishwasher">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Dishwasher_EnergyLabel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasAnnualConsumption"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#kWh"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">232</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#B_MediumOven -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#B_MediumOven">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Medium"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasAnnualConsumption"/>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#kWh"/>
+                                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">80</owl:minCardinality>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#B_SmallOven -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#B_SmallOven">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Small"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasAnnualConsumption"/>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#kWh"/>
+                                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">60</owl:minCardinality>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#B_WashingMachine -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#B_WashingMachine">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#WashingMachine_EnergyLabel"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasAnnualConsumption"/>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#kWh"/>
+                                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">247</owl:minCardinality>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Baby -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Baby">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#isOld"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#years"/>
+                        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:maxCardinality>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Boy"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Child"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#NotChild"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#OldPerson"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Bathroom -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Bathroom">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Room"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Bedroom"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Kitchen"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Laundryroom"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Livingroom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Bedroom -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Bedroom">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Room"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Kitchen"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Laundryroom"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Livingroom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Big -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Big">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Oven_Size"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Biomass -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Biomass">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Renewable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#BlindRegulation -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#BlindRegulation">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Blindness -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Blindness">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Handicap"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#NoHandicap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#BodyProcess -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#BodyProcess">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#BodyTire -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#BodyTire">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Tire"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Boiler -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Boiler">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Heating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Boy -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Boy">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#isOld"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#years"/>
+                                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">18</owl:minCardinality>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#years"/>
+                                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">29</owl:maxCardinality>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Child"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#OldPerson"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#BrightLightLevel -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#BrightLightLevel">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#LightLevelRegulation"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#LowLightLevel"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#NoLight"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#NormalLightLevel"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#SoftLightLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#BrownGoods -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#BrownGoods">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Appliance"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WhiteGoods"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#BuildingEnvironment -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#BuildingEnvironment">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#C -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#C">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Light_EnergyLabel"/>
+        <rdfs:comment>Halogen
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Calm -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Calm">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Mood"/>
+        <hba:synset>calm.a.01</hba:synset>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Cartoon -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Cartoon">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#VideoPreferences"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Comedy"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Historical"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Horror"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#ScienceFiction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Characteristic -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Characteristic">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Child -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Child">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#isOld"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#years"/>
+                                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:minCardinality>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#years"/>
+                                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">17</owl:maxCardinality>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#NotChild"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#OldPerson"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Classical -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Classical">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MusicalGenre"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Disco"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#HeavyMetal"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Pop"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Reggae"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Rock"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Cloudy -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Cloudy">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WeatherCondition"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#PartlyCloudy"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Rain"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Snow"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Sunny"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#CoffeeMachine -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#CoffeeMachine">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WhiteGoods"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasFunctionality"/>
+                <owl:allValuesFrom rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#DrinkCoffee"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>coffeemachineFunct</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Cold -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Cold">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Temperature"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Heat"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Normal"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Refreshing"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Warmth"/>
+        <hba:synset>cold.a.01</hba:synset>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Comedy -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Comedy">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#VideoPreferences"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Historical"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Horror"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#ScienceFiction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Computer -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Computer">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Instrumentation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasFunctionality"/>
+                <owl:allValuesFrom rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#PCFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Configuration -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Configuration">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#ConstantLoad -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#ConstantLoad">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#LoadProfile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Cook -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Cook">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#KitchenWork"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#TurnOffKitchenDevices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#D -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#D">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Light_EnergyLabel"/>
+        <rdfs:comment>Incandescent</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#DVDFunction -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#DVDFunction">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Dancing -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Dancing">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#BodyProcess"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#BrightLightLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EnvironmentTemperatureRegulation"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#LowSecurityLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NormalSafetyLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PlayMusic"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BodyProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Deafness -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Deafness">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Handicap"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#NoDeaf"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#NoHandicap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Device -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Device">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#DeviceInfo -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#DeviceInfo">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Dimmer -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Dimmer">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Light"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Disco -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Disco">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MusicalGenre"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#HeavyMetal"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Pop"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Reggae"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Rock"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Disease -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Disease">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#PhysicalStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#DishUpDrink -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#DishUpDrink">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#DishWasher -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#DishWasher">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#WhiteGoods"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasFunctionality"/>
+                        <owl:allValuesFrom rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#DishUpDrink"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#isIn"/>
+                        <owl:allValuesFrom rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Kitchen"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>dishwasherFunct</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#DishwasherInfo -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#DishwasherInfo">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#DeviceInfo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Dishwasher_EnergyLabel -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Dishwasher_EnergyLabel">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#DishwasherInfo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#DrinkCoffee -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#DrinkCoffee">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Drinking -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Drinking">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#BodyProcess"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#DishUpDrink"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BodyProcess"/>
+        <rdfs:comment>==&gt;washingDishes</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#DrinkingCoffee -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#DrinkingCoffee">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#BodyProcess"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#DrinkCoffee"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EnvironmentTemperatureRegulation"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#KitchenLight"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#LowSecurityLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NormalSafetyLevel"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BodyProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Dryer -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Dryer">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WhiteGoods"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Dumbness -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Dumbness">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Handicap"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#NoHandicap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#DvdPlayer -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#DvdPlayer">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BrownGoods"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasFunctionality"/>
+                <owl:allValuesFrom rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#DVDFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Earache -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Earache">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Symptom"/>
+        <rdfs:comment>Aver mal d&apos;orecchio</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Eating -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Eating">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#BodyProcess"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Cook"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EnvironmentTemperatureRegulation"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#KitchenLight"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#VentilationFunctionality"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BodyProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#EatingMicrowave -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EatingMicrowave">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#BodyProcess"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EnvironmentTemperatureRegulation"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#KitchenLight"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Microwave_ON"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BodyProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#EnergyPolicy -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EnergyPolicy">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Configuration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#EnergyServiceProvider -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EnergyServiceProvider">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#EnergySources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#EnergySources -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EnergySources">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#EnergySourcesFunctionality -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EnergySourcesFunctionality">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Entertainment -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Entertainment">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#BodyProcess"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#BrightLightLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EnvironmentTemperatureRegulation"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NormalSafetyLevel"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BodyProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#EnvironmentTemperatureRegulation -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EnvironmentTemperatureRegulation">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#EolicFunctionality -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EolicFunctionality">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#EnergySourcesFunctionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#EolicGenerator -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EolicGenerator">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Renewable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Eolic_OFF -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Eolic_OFF">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#EolicFunctionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Eolic_ON -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Eolic_ON">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#EolicFunctionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Eolic_Type -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Eolic_Type">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#EolicGenerator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#EyeTire -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EyeTire">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Tire"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Fan -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Fan">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Ventilation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasFunctionality"/>
+                <owl:allValuesFrom rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#VentilationFunctionality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Feminine -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Feminine">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Gender"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Masculine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Fete -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Fete">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BodyProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Fever -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Fever">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Symptom"/>
+        <rdfs:comment>avere la febbre</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Flat -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Flat">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BuildingEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Fluorescent -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Fluorescent">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Lamp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Fog -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Fog">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WeatherCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#ForcedCirculation -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#ForcedCirculation">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#SolarCollector_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Freezer -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Freezer">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WhiteGoods"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasFunctionality"/>
+                <owl:allValuesFrom rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#FreezerFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#FreezerFunction -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#FreezerFunction">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#FreezerInfo -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#FreezerInfo">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#DeviceInfo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Freezer_EnergyLabel -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Freezer_EnergyLabel">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#FreezerInfo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Freezer_OFF -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Freezer_OFF">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#FreezerFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Freezer_ON -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Freezer_ON">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#FreezerFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Fresh -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Fresh">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Refreshing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#FreshWind -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#FreshWind">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WindSpeed"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Gale"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#GentleModerate"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Hurricane"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#LightWind"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#StrongWind"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WholeGale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#FullDownblind -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#FullDownblind">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BlindRegulation"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#HalfDownBlind"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Functionality -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Functionality">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Gale -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Gale">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WindSpeed"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#GentleModerate"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Hurricane"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#LightWind"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#StrongWind"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WholeGale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Garage -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Garage">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BuildingEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Garden -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Garden">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BuildingEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Gender -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Gender">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#GeneralStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#GeneralStatus -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#GeneralStatus">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#GentleModerate -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#GentleModerate">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WindSpeed"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Hurricane"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#LightWind"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#StrongWind"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WholeGale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Grid -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Grid">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Photovoltaics_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Grid_Tie_withBattery -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Grid_Tie_withBattery">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Photovoltaics_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Grid_tie -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Grid_tie">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Photovoltaics_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#HVAC -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#HVAC">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#HalfDownBlind -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#HalfDownBlind">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BlindRegulation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Halogen -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Halogen">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Lamp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Handicap -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Handicap">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#GeneralStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Happy -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Happy">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Mood"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Sad"/>
+        <hba:synset>happy.a.01</hba:synset>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#HardShift -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#HardShift">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Shiftable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#HaveABath -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#HaveABath">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#BodyProcess"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EnvironmentTemperatureRegulation"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#HighSafetyLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NormalLightLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#WaterTemperatureRegulation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BodyProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Headache -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Headache">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Symptom"/>
+        <rdfs:comment>Aver mal di testa
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Heat -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Heat">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Temperature"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Normal"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Refreshing"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Warmth"/>
+        <hba:synset>hot.a.01</hba:synset>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Heating -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Heating">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#HVAC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#HeavyMetal -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#HeavyMetal">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MusicalGenre"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Pop"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Reggae"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Rock"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#HiFi -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#HiFi">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BrownGoods"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#HighLuminosity -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#HighLuminosity">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#OutdoorLuminosity"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#LowLuminosity"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MediumLuminosity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#HighSafetyLevel -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#HighSafetyLevel">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#SafetyLevelRegulation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#HighSecurityLevel -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#HighSecurityLevel">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#SecurityLevelRegulation"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#LowSecurityLevel"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MediumSecurityLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Historical -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Historical">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#VideoPreferences"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Horror"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#ScienceFiction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Horror -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Horror">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#VideoPreferences"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#ScienceFiction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Hurricane -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Hurricane">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WindSpeed"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#LightWind"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#StrongWind"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WholeGale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Incandescent -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Incandescent">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Lamp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Instrumentation -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Instrumentation">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BrownGoods"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Interphone -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Interphone">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BrownGoods"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Kitchen -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Kitchen">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Room"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Laundryroom"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Livingroom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#KitchenLight -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#KitchenLight">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#LightLevelRegulation"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#NoLight"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#KitchenWork -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#KitchenWork">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#L -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#L">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#energiaTuttoCompreso"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Lamp -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Lamp">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Light"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Laundryroom -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Laundryroom">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Room"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Livingroom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Light -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Light">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#LightInfo -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#LightInfo">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#DeviceInfo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#LightLevelRegulation -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#LightLevelRegulation">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#LightWind -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#LightWind">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WindSpeed"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#StrongWind"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WholeGale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Light_EnergyLabel -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Light_EnergyLabel">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#LightInfo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#ListeningMusic -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#ListeningMusic">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EnvironmentTemperatureRegulation"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MediumSecurityLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MentalProcess"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NormalSafetyLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PlayMusic"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MentalProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#ListeningRadio -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#ListeningRadio">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EnvironmentTemperatureRegulation"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MediumSecurityLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MentalProcess"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NormalSafetyLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PlayRadio"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MentalProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#LivingRoomLight -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#LivingRoomLight">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#LightLevelRegulation"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#NoLight"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Livingroom -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Livingroom">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#LoadProfile -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#LoadProfile">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Profile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#LowLightLevel -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#LowLightLevel">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#LightLevelRegulation"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#NoLight"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#NormalLightLevel"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#SoftLightLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#LowLuminosity -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#LowLuminosity">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#OutdoorLuminosity"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MediumLuminosity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#LowSecurityLevel -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#LowSecurityLevel">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#SecurityLevelRegulation"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MediumSecurityLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#M -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#M">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#energiaTuttoCompreso"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Masculine -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Masculine">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Gender"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Medium -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Medium">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Oven_Size"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#MediumLuminosity -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MediumLuminosity">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#OutdoorLuminosity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#MediumSecurityLevel -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MediumSecurityLevel">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#SecurityLevelRegulation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#MediumShift -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MediumShift">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Shiftable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#MentalDisability -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MentalDisability">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Handicap"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#NoHandicap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#MentalProcess -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MentalProcess">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#MentalTire -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MentalTire">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Tire"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#MicrowaveFunction -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MicrowaveFunction">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Microwave_OFF -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Microwave_OFF">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MicrowaveFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Microwave_ON -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Microwave_ON">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MicrowaveFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Mood -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Mood">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#PsychicStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#MotionDisability -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MotionDisability">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Handicap"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#NoHandicap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Mp3Player -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Mp3Player">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BrownGoods"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasFunctionality"/>
+                <owl:allValuesFrom rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MusicFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#MusicFunction -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MusicFunction">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#MusicalGenre -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MusicalGenre">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#GeneralStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#NaturalCirculation -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NaturalCirculation">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#SolarCollector_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#NoDeaf -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NoDeaf">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Handicap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#NoHandicap -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NoHandicap">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Handicap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#NoLight -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NoLight">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#LightLevelRegulation"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#NormalLightLevel"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#SoftLightLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#NoPlayDVD -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NoPlayDVD">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#DVDFunction"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#PlayDVD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#NoPlayMusic -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NoPlayMusic">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MusicFunction"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#PlayMusic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#NoPlayRadio -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NoPlayRadio">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#RadioFunction"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#PlayRadio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#NoPlayTV -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NoPlayTV">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#TVFunction"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#PlayTV"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#NoPolicy -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NoPolicy">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Configuration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#NonShiftable -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NonShiftable">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#TypeProfile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Normal -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Normal">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Temperature"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Refreshing"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Warmth"/>
+        <hba:synset>mild.a.01</hba:synset>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#NormalLightLevel -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NormalLightLevel">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#LightLevelRegulation"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#SoftLightLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#NormalSafetyLevel -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NormalSafetyLevel">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#SafetyLevelRegulation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#NotChild -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NotChild">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#OldPerson -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#OldPerson">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#isOld"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#years"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">66</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#OutdoorLuminosity -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#OutdoorLuminosity">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Weather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Oven -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Oven">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WhiteGoods"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasFunctionality"/>
+                <owl:allValuesFrom rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#KitchenWork"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#OvenInfo -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#OvenInfo">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#DeviceInfo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Oven_Size -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Oven_Size">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#OvenInfo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#PCFunction -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PCFunction">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#PC_OFF -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PC_OFF">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#PCFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#PC_ON -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PC_ON">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#PCFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#PC_Standby -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PC_Standby">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#PCFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#PartlyCloudy -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PartlyCloudy">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WeatherCondition"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Rain"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Snow"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Sunny"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Party -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Party">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#BrightLightLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EnvironmentTemperatureRegulation"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Fete"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#LowSecurityLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NormalSafetyLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PlayMusic"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Fete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#PelletStove -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PelletStove">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Renewable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Person -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Person">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#AgeRange"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Phone -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Phone">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Instrumentation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Photovoltaics -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Photovoltaics">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Renewable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#PhotovoltaicsFunctionality -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PhotovoltaicsFunctionality">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#EnergySourcesFunctionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Photovoltaics_OFF -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Photovoltaics_OFF">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#PhotovoltaicsFunctionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Photovoltaics_ON -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Photovoltaics_ON">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#PhotovoltaicsFunctionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Photovoltaics_Type -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Photovoltaics_Type">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Photovoltaics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#PhysicalStatus -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PhysicalStatus">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#PlayDVD -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PlayDVD">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#DVDFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#PlayMusic -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PlayMusic">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MusicFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#PlayPhoto -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PlayPhoto">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#PlayRadio -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PlayRadio">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#RadioFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#PlayTV -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PlayTV">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#TVFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Pop -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Pop">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MusicalGenre"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Reggae"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Rock"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Printer -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Printer">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Instrumentation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Process -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Process">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Profile -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Profile">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#PsychicStatus -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PsychicStatus">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Quiet -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Quiet">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Calm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Radiator -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Radiator">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Heating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Radio -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Radio">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BrownGoods"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasFunctionality"/>
+                <owl:allValuesFrom rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#RadioFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#RadioFunction -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#RadioFunction">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Rain -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Rain">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WeatherCondition"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Snow"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Sunny"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#ReadingBook -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#ReadingBook">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#BrightLightLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EnvironmentTemperatureRegulation"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#HighSecurityLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MentalProcess"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NormalSafetyLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PlayMusic"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MentalProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#ReadingMail -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#ReadingMail">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#BrightLightLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EnvironmentTemperatureRegulation"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MentalProcess"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NormalSafetyLevel"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MentalProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Refreshing -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Refreshing">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Temperature"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Warmth"/>
+        <hba:synset>chilly.a.02</hba:synset>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Refrigerator -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Refrigerator">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WhiteGoods"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasFunctionality"/>
+                <owl:allValuesFrom rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#RefrigeratorFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#RefrigeratorFunction -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#RefrigeratorFunction">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#RefrigeratorInfo -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#RefrigeratorInfo">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#DeviceInfo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Refrigerator_EnergyLabel -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Refrigerator_EnergyLabel">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#RefrigeratorInfo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Refrigerator_OFF -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Refrigerator_OFF">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#RefrigeratorFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Refrigerator_ON -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Refrigerator_ON">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#RefrigeratorFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Reggae -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Reggae">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MusicalGenre"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Rock"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Relax -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Relax">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#BodyProcess"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EnvironmentTemperatureRegulation"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#HalfDownBlind"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#HighSafetyLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#LowLightLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PlayMusic"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BodyProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Renewable -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Renewable">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#EnergySources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Rested -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Rested">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Stamina"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Weary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Rock -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Rock">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MusicalGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Room -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Room">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BuildingEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#S -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#S">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#energiaTuttoCompreso"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Sad -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Sad">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Mood"/>
+        <hba:synset>sad.a.01</hba:synset>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Safety -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Safety">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#SafetyLevelRegulation -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#SafetyLevelRegulation">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Scared -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Scared">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Mood"/>
+        <hba:synset>scared.a.01</hba:synset>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#ScienceFiction -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#ScienceFiction">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#VideoPreferences"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Security -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Security">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#SecurityLevelRegulation -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#SecurityLevelRegulation">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#SensingProcess -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#SensingProcess">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Serious -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Serious">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Mood"/>
+        <hba:synset>serious.a.01</hba:synset>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Shiftable -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Shiftable">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#TypeProfile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Signal -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Signal">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#SensingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Sleeping -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Sleeping">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#BodyProcess"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EnvironmentTemperatureRegulation"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#FullDownblind"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#HighSafetyLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#HighSecurityLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NoLight"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NoPlayDVD"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NoPlayMusic"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NoPlayRadio"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NoPlayTV"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#TurnOffKitchenDevices"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BodyProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Small -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Small">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Oven_Size"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Snow -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Snow">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WeatherCondition"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Sunny"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#SoftLightLevel -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#SoftLightLevel">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#LightLevelRegulation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#SoftShift -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#SoftShift">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Shiftable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#SolarCollector -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#SolarCollector">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Renewable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#SolarCollectorFunctionality -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#SolarCollectorFunctionality">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#EnergySourcesFunctionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#SolarCollector_OFF -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#SolarCollector_OFF">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#SolarCollectorFunctionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#SolarCollector_ON -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#SolarCollector_ON">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#SolarCollectorFunctionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#SolarCollector_Type -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#SolarCollector_Type">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#SolarCollector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Stamina -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Stamina">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#PsychicStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Stomachache -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Stomachache">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Symptom"/>
+        <rdfs:comment>Aver mal di stomaco</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#StrongWind -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#StrongWind">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WindSpeed"/>
+        <owl:disjointWith rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WholeGale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Study -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Study">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#BrightLightLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EnvironmentTemperatureRegulation"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MediumSecurityLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MentalProcess"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NormalSafetyLevel"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MentalProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Sunny -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Sunny">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WeatherCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Symptom -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Symptom">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#TVFunction -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#TVFunction">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#TVStandby -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#TVStandby">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#TVFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Temperature -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Temperature">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#PhysicalStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Tire -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Tire">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Weary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#TotallyTire -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#TotallyTire">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#BodyTire"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EyeTire"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MentalTire"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Tire"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Tire"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#TurnOffKitchenDevices -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#TurnOffKitchenDevices">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#KitchenWork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Tv -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Tv">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BrownGoods"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasFunctionality"/>
+                <owl:allValuesFrom rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#TVFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#TypeProfile -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#TypeProfile">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Profile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#VaryingLoad -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#VaryingLoad">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#LoadProfile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Ventilation -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Ventilation">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#HVAC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#VentilationFunctionality -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#VentilationFunctionality">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#VideoPreferences -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#VideoPreferences">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#GeneralStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Warmth -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Warmth">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Temperature"/>
+        <hba:synset>warm.a.01</hba:synset>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#WashingClothes -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#WashingClothes">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#BodyProcess"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Washingmachine_ON"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BodyProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#WashingMachine -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#WashingMachine">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#WhiteGoods"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasFunctionality"/>
+                        <owl:allValuesFrom rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WashingMachineFunction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#isIn"/>
+                        <owl:allValuesFrom rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Laundryroom"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#WashingMachineFunction -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#WashingMachineFunction">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#WashingMachineInfo -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#WashingMachineInfo">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#DeviceInfo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#WashingMachine_EnergyLabel -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#WashingMachine_EnergyLabel">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WashingMachineInfo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Washingmachine_OFF -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Washingmachine_OFF">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WashingMachineFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Washingmachine_ON -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Washingmachine_ON">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WashingMachineFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#WatchingDVD -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#WatchingDVD">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EnvironmentTemperatureRegulation"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#LivingRoomLight"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MediumSecurityLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MentalProcess"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NormalSafetyLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PlayDVD"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#SoftLightLevel"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MentalProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#WatchingPhoto -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#WatchingPhoto">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EnvironmentTemperatureRegulation"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MediumSecurityLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MentalProcess"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NormalSafetyLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PlayPhoto"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#SoftLightLevel"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MentalProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#WatchingTV -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#WatchingTV">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EnvironmentTemperatureRegulation"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#FullDownblind"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#LivingRoomLight"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MediumSecurityLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MentalProcess"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NormalSafetyLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PlayTV"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#SoftLightLevel"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MentalProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#WaterTemperatureRegulation -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#WaterTemperatureRegulation">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Weary -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Weary">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Stamina"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Weather -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Weather">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#WeatherCondition -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#WeatherCondition">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Weather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#WhiteGoods -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#WhiteGoods">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Appliance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#WholeGale -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#WholeGale">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#WindSpeed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#WindSpeed -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#WindSpeed">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Weather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#Work -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#Work">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#BrightLightLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EnvironmentTemperatureRegulation"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MediumSecurityLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MentalProcess"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NormalSafetyLevel"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MentalProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#XL -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#XL">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#energiaTuttoCompreso"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#doorActuator -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#doorActuator">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Actuators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#elightBioraria -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#elightBioraria">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#EnergyPolicy"/>
+        <rdfs:comment>Fascia blu:                                                                                                                            Fascia arancione:
+(dalle 19.00 alle 8.00 dal lunedì al venerdì, sabato, domenica e festività nazionali)         (dalle 8.00 alle 19.00 dal lunedì al venerdì)
+0,0395  Euro/kWh                                                                                                               0,1155 Euro/kWh</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#energiaPuraCasa -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#energiaPuraCasa">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#EnergyPolicy"/>
+        <rdfs:comment>Prezzo Bloccato per 12 mesi     0,099 €/kWh </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#energiaTuttoCompreso -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#energiaTuttoCompreso">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#EnergyPolicy"/>
+        <rdfs:comment>
+Taglia SMALL:                Taglia MEDIUM :             Taglia LARGE :                Taglia   EXTRALARGE :  
+fino a 150 kWh/mese    fino a 225 kWh/mese     fino a 300 kWh/mese      fino a 375 kWh/mese
+23  euro al mese           36  euro al mese             53  euro al mese             72  euro al mese</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#horizontalAxis -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#horizontalAxis">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Eolic_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#verticalAxis -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#verticalAxis">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Eolic_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#windowActuator -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#windowActuator">
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Actuators"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#hasFunctionality"/>
+                <owl:allValuesFrom rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#BlindRegulation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#work_on_PC -->
+
+    <owl:Class rdf:about="http://swot.sisinflab.poliba.it/onto/hba#work_on_PC">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#EnvironmentTemperatureRegulation"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#LivingRoomLight"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MediumSecurityLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#MentalProcess"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#NormalSafetyLevel"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#PC_ON"/>
+                    <rdf:Description rdf:about="http://swot.sisinflab.poliba.it/onto/hba#SoftLightLevel"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#MentalProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swot.sisinflab.poliba.it/onto/hba#UserProfile -->
+
+    <owl:NamedIndividual rdf:about="http://swot.sisinflab.poliba.it/onto/hba#UserProfile">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForDisease"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForStamina"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForWeatherCondition"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForDisease"/>
+                        <owl:allValuesFrom rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Headache"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForStamina"/>
+                        <owl:allValuesFrom rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Rested"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#isSuggestedForWeatherCondition"/>
+                        <owl:allValuesFrom rdf:resource="http://swot.sisinflab.poliba.it/onto/hba#Cloudy"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
