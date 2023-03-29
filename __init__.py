@@ -11,7 +11,7 @@ class Postagging(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
     #carico l'ontologia all'interno dello script:
-    #onto = get_ontology("file://HBAwithEnergy.owl").load()
+    onto = get_ontology("file://HBAwithEnergy.owl").load()
 
     #definisco la lista di tutte le object property dell'ontologia e la stampo:
     #object_properties_list = list(onto.object_properties())
