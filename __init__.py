@@ -13,6 +13,8 @@ import owlready2
 class Postagging(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
+        onto = get_ontology("file://HBAwithEnergy.owl").load()
+
 
     #definisco la lista di tutte le object property dell'ontologia e la stampo:
     #object_properties_list = list(onto.object_properties())
