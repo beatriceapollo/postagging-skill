@@ -10,18 +10,18 @@ import owlready2
 class Postagging(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
-        #carico l'ontologia all'interno dello script:
-        onto = get_ontology("file://HBAwithEnergy.owl").load()
+    #carico l'ontologia all'interno dello script:
+    onto = get_ontology("file://HBAwithEnergy.owl").load()
 
-        #definisco la lista di tutte le object property dell'ontologia e la stampo:
-        object_properties_list = list(onto.object_properties())
-        print(object_properties_list)
+    #definisco la lista di tutte le object property dell'ontologia e la stampo:
+    object_properties_list = list(onto.object_properties())
+    print(object_properties_list)
 
-        #definisco la lista di tuple contenente le associazioni proprietà-range e la stampo:
-        associations = []
-        for o in object_properties_list:
-            associations.append((o,o.range))
-            print(associations)
+    #definisco la lista di tuple contenente le associazioni proprietà-range e la stampo:
+    associations = []
+    for o in object_properties_list:
+        associations.append((o,o.range))
+        print(associations)
 
     @intent_handler('postagging.intent')
     def handle_postagging(self, message):
