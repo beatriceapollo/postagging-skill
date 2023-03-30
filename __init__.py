@@ -29,6 +29,7 @@ class Postagging(MycroftSkill):
     def handle_identity_intent(self, message):
 
         #carico l'ontologia all'interno dello script:
+        onto_path.append("./")
         onto = get_ontology("file://./HBAwithEnergy.owl").load()
 
         #definisco la lista di tutte le object property dell'ontologia e la stampo:
