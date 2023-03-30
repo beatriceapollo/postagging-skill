@@ -107,7 +107,7 @@ class Postagging(MycroftSkill):
             class NewClass(Thing):
                 equivalent_to = class_expression
 
-        self.speak(print(class_expression))
+        self.speak(class_expression)
 
     @intent_handler(IntentBuilder('StopIntent').require('stop'))
     def handle_stop_intent(self, message):
