@@ -13,13 +13,11 @@ onto = get_ontology("/home/beatrice/skill1/postagging-skill/HBAwithEnergy.owl").
 
 #definisco la lista di tutte le object property dell'ontologia:
 object_properties_list = list(onto.object_properties())
-#print(object_properties_list)
 
 #definisco la lista di tuple contenente le associazioni proprietà-range:
 associations = []
 for o in object_properties_list:
     associations.append((o,o.range))
-    #print(associations)
 
 
 class Postagging(MycroftSkill):
@@ -46,7 +44,6 @@ class Postagging(MycroftSkill):
 
         #effettuo la prima operazione di chunking:
         output = chunker.parse(tagged_text) 
-        #print(output) 
 
         #estraggo e stampo il sottoalbero che rappresenta il pattern taggato con P1:
         for subtree in output.subtrees(filter=lambda t: t.label() == 'P1'):
@@ -60,7 +57,6 @@ class Postagging(MycroftSkill):
                         
         #effettuo la seconda operazione di chunking sul sottoalbero di prima:
         output2 = chunker2.parse(subtree)
-        #print(output2) 
 
         #estraggo e stampo il secondo sottoalbero che rappresenta il pattern taggato con P2:
         for subtree2 in output2.subtrees(filter=lambda t: t.label() == 'P2'):
@@ -68,7 +64,6 @@ class Postagging(MycroftSkill):
 
         #trasformo il sottalbero estratto in una stringa con la prima lettera maiuscola:
         Concept_string = (' '.join([x[0] for x in subtree2])).capitalize()
-        #print(Concept_string)
 
         #effettuo la ricerca del concetto estratto all'interno dell'ontologia e stampo il risultato:
         Concept = onto.search(iri = "*"+Concept_string)
@@ -77,7 +72,6 @@ class Postagging(MycroftSkill):
 
         #definisco la lista degli "antenati" del concetto estratto:
         Ancestors = list(Concept[0].ancestors())
-        #print(Ancestors)
 
         #cerco tra gli antenati la classe che è un range di una proprietà presente nell'ontologia;
         #salvo all'interno di variabili la classe individuata come range e la proprietà associata:
