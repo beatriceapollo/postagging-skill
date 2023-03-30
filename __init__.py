@@ -8,7 +8,7 @@ from owlready2 import *
 import owlready2
 
 #carico l'ontologia all'interno dello script:
-onto = get_ontology("./HBAwithEnergy.owl").load()
+onto = get_ontology("/HBAwithEnergy.owl").load()
 
 class Postagging(MycroftSkill):
     def __init__(self):
