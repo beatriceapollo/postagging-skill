@@ -9,7 +9,8 @@ import owlready2
 
 
 #carico l'ontologia all'interno dello script:
-onto = get_ontology("file://./HBAwithEnergy.owl").load()
+#onto = get_ontology("file://./HBAwithEnergy.owl").load()
+onto = get_ontology("/home/beatrice/skill1/postagging-skill/HBAwithEnergy.owl").load()
 
 #definisco la lista di tutte le object property dell'ontologia:
 object_properties_list = list(onto.object_properties())
@@ -23,6 +24,7 @@ for o in object_properties_list:
 class Postagging(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
+        print(self.root_dir)
 
     @intent_handler('postagging.intent')
     def handle_postagging(self, message):
