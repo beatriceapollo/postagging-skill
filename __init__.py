@@ -24,7 +24,6 @@ for o in object_properties_list:
 class Postagging(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
-        print(self.root_dir)
 
     @intent_handler('postagging.intent')
     def handle_postagging(self, message):
@@ -100,8 +99,9 @@ class Postagging(MycroftSkill):
     @intent_handler(IntentBuilder('StopIntent').require('stop'))
     def handle_stop_intent(self, message):
         self.speak_dialog('stop')
-         
-         
+
+    def print_path(self):
+        print(self.root_dir)     
 
 def create_skill():
     return Postagging()
