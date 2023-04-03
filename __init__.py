@@ -36,7 +36,6 @@ class Postagging(MycroftSkill):
         chunker = RegexpParser(r'''
         P1:
         {<VB.*><.*>*<NN.*>}
-        {<VBP><.*><JJ>}
         ''')
 
         #effettuo la prima operazione di chunking:
@@ -50,7 +49,6 @@ class Postagging(MycroftSkill):
         chunker2 = RegexpParser(r'''
         P2:
         {<NN.*>}
-        {<JJ>}
         ''')
                         
         #effettuo la seconda operazione di chunking sul sottoalbero di prima:
