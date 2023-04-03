@@ -31,9 +31,6 @@ class Postagging(MycroftSkill):
     @intent_handler(IntentBuilder('IdentityIntent').require('identity'))
     def handle_identity_intent(self, message):
 
-
-        print(self.root_dir)   
-
         #recupero la frase pronunciata dall'utente:
         text = message.data.get('utterance')
         #effettuo il pos tagging della frase:
@@ -96,6 +93,8 @@ class Postagging(MycroftSkill):
         with onto:
             class NewClass(Thing):
                 equivalent_to = class_expression
+        
+        self.speak(f"{ConceptMatch} and {PropertyMatch}")
 
 
     @intent_handler(IntentBuilder('StopIntent').require('stop'))
