@@ -36,7 +36,7 @@ class Postagging(MycroftSkill):
         chunker = RegexpParser(r'''
         P1:
         {<VB.*><.*>*<NN.*>}
-        {<VBP><JJ>}
+        {<VBP><.*><JJ>}
         ''')
 
         #effettuo la prima operazione di chunking:
