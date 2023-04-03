@@ -24,10 +24,6 @@ class Postagging(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
 
-    @intent_handler('postagging.intent')
-    def handle_postagging(self, message):
-        self.speak_dialog('postagging')
-
     @intent_handler(IntentBuilder('IdentityIntent').require('identity'))
     def handle_identity_intent(self, message):
 
@@ -95,12 +91,6 @@ class Postagging(MycroftSkill):
                 equivalent_to = class_expression
         
         self.speak(f"{ConceptMatch} and {PropertyMatch}")
-
-
-    @intent_handler(IntentBuilder('StopIntent').require('stop'))
-    def handle_stop_intent(self, message):
-        self.speak_dialog('stop')
-  
 
 def create_skill():
     return Postagging()
