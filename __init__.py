@@ -21,7 +21,7 @@ for o in object_properties_list:
     associations.append((o,o.range))
 
 #recupero i pattern dal file di configurazione:
-with open("config.yaml", "r") as f:
+with open("/opt/mycroft/skills/postagging-skill.beatriceapollo/config.yaml", "r") as f:
      config = yaml.safe_load(f)
 
 pattern1 = "P1: "+str(config['P1'])+"\n"+str(config['P1.1'])
