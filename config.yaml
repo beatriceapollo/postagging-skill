@@ -1,0 +1,6 @@
+#pattern configuration
+
+P1: "{<VB.*><.*>*<NN.*>}"
+P1.1: "{<VBP><.*>*<JJ>}"
+P2: "{<NN.*>}"
+P2.1: "{<JJ>}"

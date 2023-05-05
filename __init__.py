@@ -6,6 +6,7 @@ from nltk.chunk import RegexpParser
 from nltk import word_tokenize
 from owlready2 import *
 import owlready2
+import yaml
 
 
 #carico l'ontologia all'interno dello script:
@@ -18,6 +19,15 @@ object_properties_list = list(onto.object_properties())
 associations = []
 for o in object_properties_list:
     associations.append((o,o.range))
+
+#recupero i pattern dal file di configurazione:
+with open("config.yaml", "r") as f:
+     config = yaml.safe_load(f)
+
+pattern1 = "P1: "+str(config['P1'])+"\n"+str(config['P1.1'])
+pattern2 = "P2: "+str(config['P2'])+"\n"+str(config['P2.1'])
+print(pattern1)
+print(pattern2)
 
 
 class Postagging(MycroftSkill):
@@ -33,11 +43,7 @@ class Postagging(MycroftSkill):
         tokenized_text = word_tokenize(text)
         tagged_text = nltk.pos_tag(tokenized_text)
         #definisco il pattern P1 da riconoscere (verbo+eventuali tag qualsiasi+nome):
-        chunker = RegexpParser(r'''
-        P1:
-        {<VB.*><.*>*<NN.*>}
-        {<VBP><.*>*<JJ>}
-        ''')
+        chunker = RegexpParser(pattern1)
 
         #effettuo la prima operazione di chunking:
         output = chunker.parse(tagged_text) 
@@ -47,11 +53,7 @@ class Postagging(MycroftSkill):
             print(subtree) 
 
         #definisco il secondo pattern P2 (nome):
-        chunker2 = RegexpParser(r'''
-        P2:
-        {<NN.*>}
-        {<JJ>}
-        ''')
+        chunker2 = RegexpParser(pattern2)
                         
         #effettuo la seconda operazione di chunking sul sottoalbero di prima:
         output2 = chunker2.parse(subtree)
