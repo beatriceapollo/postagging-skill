@@ -7,6 +7,7 @@ from nltk import word_tokenize
 from owlready2 import *
 import owlready2
 import yaml
+from nltk.corpus import stopwords
 
 
 #carico l'ontologia all'interno dello script:
@@ -26,8 +27,6 @@ with open("/opt/mycroft/skills/postagging-skill.beatriceapollo/config.yaml", "r"
 
 pattern1 = "P1: "+str(config['P1'])+"\n"+str(config['P1.1'])
 pattern2 = "P2: "+str(config['P2'])+"\n"+str(config['P2.1'])
-print(pattern1)
-print(pattern2)
 
 
 class Postagging(MycroftSkill):
@@ -39,9 +38,24 @@ class Postagging(MycroftSkill):
 
         #recupero la frase pronunciata dall'utente:
         text = message.data.get('utterance')
-        #effettuo il pos tagging della frase:
+
+        #tokenizzo la frase:
         tokenized_text = word_tokenize(text)
-        tagged_text = nltk.pos_tag(tokenized_text)
+
+        #rimuovo le stop words, ad eccezione di 'have' e 'am':
+        stop_words = set(stopwords.words('english'))
+        stop_words.discard('have')
+        stop_words.discard('am')
+        filtered_sentence = [w for w in tokenized_text if not w.lower() in stop_words]
+        filtered_sentence = []
+        for w in tokenized_text:
+            if w not in stop_words:
+                filtered_sentence.append(w)
+
+        #effettuo il pos tagging della frase filtrata:
+        tagged_text = nltk.pos_tag(filtered_sentence)
+        print(tagged_text)
+
         #definisco il pattern P1 da riconoscere (verbo+eventuali tag qualsiasi+nome):
         chunker = RegexpParser(pattern1)
 
